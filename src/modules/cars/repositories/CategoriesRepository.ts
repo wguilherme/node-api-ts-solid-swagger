@@ -7,8 +7,19 @@ import {
 export class CategoriesRespository implements ICategoriesRepository {
   private categories: Category[];
 
-  constructor() {
+  // eslint-disable-next-line no-use-before-define
+  private static INSTANCE: CategoriesRespository;
+
+  private constructor() {
     this.categories = [];
+  }
+
+  public static getInstance(): CategoriesRespository {
+    if (!CategoriesRespository.INSTANCE) {
+      CategoriesRespository.INSTANCE = new CategoriesRespository();
+    }
+    console.log("pass here", CategoriesRespository.INSTANCE);
+    return CategoriesRespository.INSTANCE;
   }
 
   create({ name, description }: ICreateCategoryDTO): void {
