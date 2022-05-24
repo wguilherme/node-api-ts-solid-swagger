@@ -18,7 +18,6 @@ export class CategoriesRespository implements ICategoriesRepository {
     if (!CategoriesRespository.INSTANCE) {
       CategoriesRespository.INSTANCE = new CategoriesRespository();
     }
-    console.log("pass here", CategoriesRespository.INSTANCE);
     return CategoriesRespository.INSTANCE;
   }
 
@@ -31,7 +30,6 @@ export class CategoriesRespository implements ICategoriesRepository {
     });
 
     this.categories.push(category);
-    console.log(this.categories);
   }
 
   list(): Category[] {
