@@ -6,4 +6,6 @@ D => DIP - Dependency Inversion Principle
 
 
 1 - Model + constructor
-2 - Service
+2 - Reposiory
+3 - Service
+
