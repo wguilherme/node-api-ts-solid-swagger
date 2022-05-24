@@ -1,8 +1,6 @@
 import { Category } from "../model/Category";
 import { ICategoriesRepository } from "./ICategoriesRepository";
 
-
-
 export class CategoriesRespository implements ICategoriesRepository {
   private categories: Category[];
 
