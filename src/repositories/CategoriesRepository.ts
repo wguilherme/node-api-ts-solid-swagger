@@ -19,5 +19,12 @@ export class CategoriesRespository {
       description,
       created_at: new Date(),
     });
+
+    this.categories.push(category);
+    console.log(this.categories);
+  }
+
+  list(): Category[] {
+    return this.categories;
   }
 }
