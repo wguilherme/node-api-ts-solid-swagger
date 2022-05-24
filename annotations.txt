@@ -9,3 +9,10 @@ D => DIP - Dependency Inversion Principle
 2 - Reposiory
 3 - Service
 
+
+// anotações
+
+Todo useCase só vai ter 1 controller com padrão de handle passando request e response
+
+
+
