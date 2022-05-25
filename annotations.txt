@@ -15,4 +15,10 @@ D => DIP - Dependency Inversion Principle
 Todo useCase só vai ter 1 controller com padrão de handle passando request e response
 
 
+docker build -t <name>
+docker run
+docker run -p 3333:3333 <name>     
+
+Entrar no container do node
+docker exec -it <id> /bin/bash
 
