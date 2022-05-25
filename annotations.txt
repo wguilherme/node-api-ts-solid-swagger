@@ -24,5 +24,9 @@ docker exec -it <id> /bin/bash
 
 
 // docker compose
+stop -> parar
+down -> remover
+docker logs <name>
+docker logs <name> -f (real time)
 
 
