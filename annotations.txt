@@ -22,3 +22,7 @@ docker run -p 3333:3333 <name>
 Entrar no container do node
 docker exec -it <id> /bin/bash
 
+
+// docker compose
+
+
